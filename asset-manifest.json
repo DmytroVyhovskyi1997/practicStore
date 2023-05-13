@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/practicStore/static/css/main.7acaea2f.css",
+    "main.js": "/practicStore/static/js/main.235a4a8c.js",
+    "index.html": "/practicStore/index.html",
+    "main.7acaea2f.css.map": "/practicStore/static/css/main.7acaea2f.css.map",
+    "main.235a4a8c.js.map": "/practicStore/static/js/main.235a4a8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.235a4a8c.js"
+  ]
+}
