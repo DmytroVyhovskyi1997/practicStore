@@ -1,13 +1,16 @@
 import { Outlet } from "react-router"
-import { StyledLink } from "./Layout.styled"
+import { Header, Nav, StyledLink } from "./Layout.styled"
 
 export const Layout =()=>{
 return(
     <>
-    <nav>
+    <Header>
+    <Nav>
 <StyledLink to='/'>Categories</StyledLink>
 <StyledLink to='/products'>Products</StyledLink>
-    </nav>
+    </Nav>
+    </Header>
+  
     <main>
         <Outlet/>
     </main>
