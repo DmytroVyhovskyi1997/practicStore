@@ -1,9 +1,10 @@
 import { Clothing } from "components/Сlothing/Сlothing"
 
-export const Products = () =>{
+export const Products = ({setProduct}) =>{
+    
     return(
         <>
-        <Clothing/>
+        <Clothing setProduct={setProduct}/>
         </>
     )
 }

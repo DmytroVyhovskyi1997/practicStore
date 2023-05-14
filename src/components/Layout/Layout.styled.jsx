@@ -9,16 +9,18 @@ padding-bottom: 5px;
 position: relative;
 margin-right:50px;
 
+
+
 &.active {
-  color: #463256;;
-  &::after,
-  hover {
+  color: #463256;
+  &::after {
     content: '';
     position: absolute;
     width: 100%;
     height: 4px;
     left: 0;
     bottom: 0;
+    transition: transform .35s cubic-bezier(.4,0,.2,1),background-color .35s cubic-bezier(.4,0,.2,1);
     background-color: #463256;;
     border-radius: 2px;
   }
@@ -38,4 +40,12 @@ display: flex;
   margin-left: 100px;
   margin-top: 30px;
   margin-bottom: 30px;
+`
+
+export const Footer = styled.footer`
+padding: 100px;
+min-width: 480px;
+background: linear-gradient(114.99deg, rgb(244, 243, 244) -0.99%, rgb(87, 54, 163) 54.28%, rgb(87, 82, 100) 78.99%);
+box-shadow: rgba(0, 0, 0, 0.23) -2.5777px 6.87386px 20.6216px;
+border-bottom: 1px solid rgb(236, 236, 236);
 `

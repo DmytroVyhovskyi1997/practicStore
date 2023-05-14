@@ -8,7 +8,7 @@ margin-top: 100px;
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
-    border-radius: 32px;
+    border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.25) 0px 0px 20px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 20px;
 `
@@ -22,3 +22,4 @@ justify-content: center;
 margin-bottom: 20px;
 padding: 0;
 `
+

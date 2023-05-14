@@ -3,6 +3,7 @@
 body {
   margin: 0;
 font-family: 'Oswald', sans-serif;
+background-color: #d1cdd5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,4 +20,5 @@ li{
 
 a{
   text-decoration: none;
+  
 }
