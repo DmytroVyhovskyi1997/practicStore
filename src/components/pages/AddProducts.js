@@ -1,7 +1,8 @@
-import { Card } from "components/Сlothing/Clothing.styled"
+import { CardProducts } from "../CardProducts/CardProducts"
+
 
 export const AddProduts = ()=>{
     return(
-        <Card/>
+        <CardProducts/>
     )
 }

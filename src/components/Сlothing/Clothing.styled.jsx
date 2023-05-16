@@ -23,3 +23,18 @@ margin-bottom: 20px;
 padding: 0;
 `
 
+export const Button = styled.button`
+margin-top:30px;
+width: 98px;
+height: 32px;
+background-color: #9169b0;
+border-radius: 30px;
+font-size: 13px;
+font-style: normal;
+font-weight: 500;
+line-height: 1.5;
+animation: pulse 3s infinite;
+`
+
+
+

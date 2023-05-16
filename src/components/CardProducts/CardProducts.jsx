@@ -1,21 +1,23 @@
-export const CardProducts = ({ products }) => {
-  console.log(products);
+import { Box, Button, Card } from '../Сlothing/Clothing.styled';
+
+export const CardProducts = ({ products, setProducts }) => {
+  const deleteCard = (id) => {
+    setProducts((prevProducts) => prevProducts.filter((product) => product.id !== id));
+  };
+
   return (
-    <div>
-      <h2>Cart Items:</h2>
-      {products &&
-        products.map((product) => (
-          <div key={product.id}>
-            <p>{product.title}</p>
+    <>
+      <Card>
+        {products.map((product) => (
+          <Box key={product.id}>
+            <h2>{product.title}</h2>
+            <p>{product.description}</p>
             <p>Price: ${product.price}</p>
-          </div>
+            <img src={product.image} alt="product" width="200" />
+            <Button onClick={() => deleteCard(product.id)}>Delete Card</Button>
+          </Box>
         ))}
-    </div>
+      </Card>
+    </>
   );
 };
-
-
-
-
-
-

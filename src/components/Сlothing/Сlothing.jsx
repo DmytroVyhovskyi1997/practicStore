@@ -1,15 +1,9 @@
-
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/api';
 import { Box, Card } from './Clothing.styled';
-
-
-
-
 export const Clothing = ({setProduct}) => {
   const [products, setProducts] = useState([]);
  
-
   const addToCart = (product) => {
     setProduct(prevState => [...prevState, product]);
   
@@ -18,7 +12,6 @@ export const Clothing = ({setProduct}) => {
   useEffect(() => {
     fetchProducts().then((data) => setProducts(data));
   }, []);
-
   return (
     <>
       <Card>
