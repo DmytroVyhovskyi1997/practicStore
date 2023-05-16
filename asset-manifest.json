@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/practicStore/static/css/main.f0998981.css",
-    "main.js": "/practicStore/static/js/main.b391cd5d.js",
+    "main.js": "/practicStore/static/js/main.05abbd88.js",
     "index.html": "/practicStore/index.html",
     "main.f0998981.css.map": "/practicStore/static/css/main.f0998981.css.map",
-    "main.b391cd5d.js.map": "/practicStore/static/js/main.b391cd5d.js.map"
+    "main.05abbd88.js.map": "/practicStore/static/js/main.05abbd88.js.map"
   },
   "entrypoints": [
     "static/css/main.f0998981.css",
-    "static/js/main.b391cd5d.js"
+    "static/js/main.05abbd88.js"
   ]
 }
