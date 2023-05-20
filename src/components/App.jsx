@@ -1,12 +1,19 @@
-import { Route, Routes } from "react-router";
-import { Layout } from "./Layout/Layout";
-import { Categories } from "./pages/Categories";
-import { Products } from "./pages/Products";
-import { CardProducts } from "./CardProducts/CardProducts";
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
+import { Route, Routes } from 'react-router';
+import { Layout } from './Layout/Layout';
+import { Categories } from './pages/Categories';
+import { Products } from './pages/Products';
+import { CardProducts } from './CardProducts/CardProducts';
 
 export const App = () => {
   const [cartItems, setCartItems] = useState([]);
+
+  useEffect(() => {
+    const storedItems = localStorage.getItem('cartItems');
+    if (storedItems) {
+      setCartItems(JSON.parse(storedItems));
+    }
+  }, []);
 
   return (
     <Routes>
@@ -18,5 +25,6 @@ export const App = () => {
     </Routes>
   );
 };
+
 
 

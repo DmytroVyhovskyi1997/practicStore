@@ -1,17 +1,22 @@
 import { useEffect, useState } from 'react';
 import { fetchProducts } from '../services/api';
-import { Box, Card } from './Clothing.styled';
-export const Clothing = ({setProduct}) => {
+import { Box, Button, Card } from './Clothing.styled';
+
+export const Clothing = ({ setProduct }) => {
   const [products, setProducts] = useState([]);
- 
+
   const addToCart = (product) => {
-    setProduct(prevState => [...prevState, product]);
-  
+    setProduct((prevItems) => {
+      const updatedItems = [...prevItems, product];
+      localStorage.setItem('cartItems', JSON.stringify(updatedItems));
+      return updatedItems;
+    });
   };
-  
+
   useEffect(() => {
     fetchProducts().then((data) => setProducts(data));
   }, []);
+
   return (
     <>
       <Card>
@@ -21,11 +26,11 @@ export const Clothing = ({setProduct}) => {
             <p>{product.description}</p>
             <p>Price: ${product.price}</p>
             <img src={product.image} alt="product" width="200" />
-            <button onClick={() => addToCart(product)}>Add to Cart</button>
+            <Button onClick={() => addToCart(product)}>Add to Cart</Button>
           </Box>
         ))}
       </Card>
-      
     </>
   );
 };
+
